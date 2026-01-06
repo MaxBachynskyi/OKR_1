@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея зображень</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Галерея зображень</h1>
+
+<div id="gallery" class="gallery"></div>
+
+<div class="pagination" id="pagination"></div>
+
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+
+    <div class="modal-content">
+        <button id="prev">&#10094;</button>
+
+        <div class="image-wrapper">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <button id="next">&#10095;</button>
+    </div>
+
+    <p id="modalTitle"></p>
+    <p id="modalDescription"></p>
+
+    <div class="effects">
+        <label>Ефект переходу:</label>
+        <select id="effectSelect">
+            <option value="fade">Fade</option>
+            <option value="slide">Slide</option>
+            <option value="zoom">Zoom</option>
+        </select>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
